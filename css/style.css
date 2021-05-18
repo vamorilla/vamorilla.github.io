@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:wght@100&display=swap');
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+}
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fbebd6;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    position: relative;
+    max-width: 190px;
+}
+header ul{
+    position: relative;
+    display: flex;
+}
+header ul li{
+    list-style: none;
+}
+header ul li a{
+    display: inline-block;
+    color: #333;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 40px;
+    text-decoration: none;
+}
+.content{
+   position: relative;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center; 
+}
+.content .textBox{
+    position: relative;
+    max-width: 600px;
+}
+.content .textBox h2{
+    color: #694941;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+.content .textBox h2 span{
+    color: #b5545b;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+.content .textBox p{
+    margin-top: 15px;
+    word-spacing: 5px;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+}
+.content .textBox a{
+    display: inline-block;
+    margin-top: 25px;
+    padding: 8px 20px;
+    background-color: #b5545b;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+.content .textBox a:hover{
+    background-color: #cd7269;
+
+}
+.content .imgBox{
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 50px;
+}
+.content .imgBox img{
+    max-width: 450px;
+    transform: rotate(-10deg);
+}
+.content .imgBox img:hover{
+    transform: rotate(10deg);
+    transition: 0.5s;
+}
+.sci{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+}
+.sci li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.sci li:hover{
+    transform: translateY(-15px);
+}
+.sci li img{
+    max-width: 40px;
+}
